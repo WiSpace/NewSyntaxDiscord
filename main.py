@@ -20,7 +20,7 @@ def pr_e(color, text):
     return f"[2;"+color+"m"+text+"[0m"
 
 # get code
-with open(args.path, args.e) as f:
+with open(args.path, encoding=args.e) as f:
     code = f.read()
 
 for reg, color in tokens.items():
